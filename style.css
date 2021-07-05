@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, .1);
+}
+
+.container .left-side {
+    position: relative;
+    background: rgb(22, 146, 155);
+    padding: 40px;
+}
+
+.profileText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+.profileText .imgbx {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 25%;
+    overflow: hidden;
+}
+
+.profileText .imgbx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileText h2 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profileText h2 span {
+    font-size: .8em;
+    font-weight: 300;
+}
+
+.conductInfo {
+    padding-top: 40px;
+}
+
+.title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.conductInfo ul {
+    position: relative;
+}
+
+.conductInfo ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.conductInfo ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: rgb(10, 4, 63);
+}
+
+.conductInfo ul li span {
+    color: #fff;
+    font-weight: 300;
+}
+
+.conductInfo.education li {
+    margin-bottom: 15px;
+}
+
+.conductInfo.education h5 {
+    color: rgb(10, 4, 63);
+    font-weight: 500;
+}
+
+.conductInfo.education h4:nth-child(2) {
+    color: #fff;
+    font-weight: 500;
+}
+
+.conductInfo.education h4 {
+    color: #fff;
+    font-weight: 300;
+}
+
+.conductInfo.language .percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: rgb(10, 4, 63);
+    display: block;
+    margin-top: 5px;
+}
+
+.conductInfo.language .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #7fc70b;
+}
+
+.container .right-side {
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+.about {
+    margin-bottom: 10px;
+}
+
+.about:last-child {
+    margin-bottom: 10px;
+}
+
+.title2 {
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+p {
+    color: black;
+    font-weight: 50;
+    margin-bottom: 5px;
+}
+
+.name {
+    margin-top: 100px;
+    float: right;
+}
